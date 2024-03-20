@@ -8,7 +8,7 @@
 }
 
 .button-primary {
-    cursor: pointer;
+  cursor: pointer;
   border-radius: 8px;
   background: #ff900e;
   color: #fff;
@@ -55,8 +55,8 @@ nav > ul > li > a {
   margin: 0 30px;
 }
 .banner-description {
-width: 868px;
-  color:  #727272;
+  width: 868px;
+  color: #727272;
   text-align: center;
   font-size: 16px;
   font-weight: 400;
@@ -68,7 +68,7 @@ width: 868px;
   height: 64px;
   flex-shrink: 0;
 }
-.banner img{
+.banner img {
   margin-top: 5px;
   width: 100%;
 }
@@ -81,46 +81,84 @@ width: 868px;
 /* ################################ */
 
 /* Smaller Sreen */
-@media screen and (max-width: 576px){
-  *{
+@media screen and (max-width: 576px) {
+  * {
     margin: 0;
     padding: 0;
   }
-  header{
+  header {
     padding: 20px;
   }
-  nav{
+  nav {
     margin: 10px 0;
   }
-  .header-container{
+  .header-container {
     flex-direction: column;
   }
-  .banner-description{
+  .banner-description {
     width: 100%;
   }
 }
 
 /* Medium Sreen */
 
-@media screen and (min-width: 576px) and (max-width:997px) {
-  *{
+@media screen and (min-width: 576px) and (max-width: 997px) {
+  * {
     margin: 0;
     padding: 0;
   }
-  header{
-
+  header {
     padding: 50px;
   }
-  nav{
+  nav {
     margin: 10px 0;
   }
-  .header-container{
+  .header-container {
     display: flex;
     justify-content: space-between;
   }
-  .banner-description{
+  .banner-description {
     width: 100%;
   }
-
 }
 
+/* Main Section is start here */
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* Teams Section is start here */
+.teams-conatiner {
+  display: flex;
+  align-items: center;
+}
+.teams-img-conatiner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.4rem;
+}
+
+.tems-text-container {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+.teams-title {
+  font-size: 2.9rem;
+}
+.teams-title .quick-list {
+  font-size: 2.9rem;
+  color: #727272;
+  font-weight: 500;
+}
+
+.off-our {
+}
+.features {
+  color: #ff900e;
+  font-family: "Work Sans";
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
