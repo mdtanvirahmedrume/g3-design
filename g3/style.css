@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Common Style */
+* {
+  font-family: "Work Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.button-primary {
+    cursor: pointer;
+  border-radius: 8px;
+  background: #ff900e;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  border: 0;
+}
+
+/* Header Style */
+header {
+  background: rgba(255, 144, 14, 0.1);
+  padding: 50px 230px;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+ul li {
+  margin-right: 30px;
+  font-size: 1rem;
+  color: #424242;
+}
+nav > ul > li > a {
+  text-decoration: none;
+}
+
+/* Banner Section is Start Here */
+.banner-content {
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
+}
+.banner-title {
+  font-size: 4rem;
+  margin: 0 30px;
+}
+.banner-description {
+width: 868px;
+  color:  #727272;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+}
+.btn {
+  margin: 15px 0;
+  width: 180px;
+  height: 64px;
+  flex-shrink: 0;
+}
+.banner img{
+  margin-top: 5px;
+  width: 100%;
+}
+
+/* Responsive */
+/* Smaller Sreen */
+@media screen and (max-width: 576px){
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  header{
+    padding: 20px;
+  }
+  nav{
+    margin: 10px 0;
+  }
+  .header-container{
+    flex-direction: column;
+  }
+  .banner-description{
+    width: 100%;
+  }
+}
+
+/* Medium Sreen */
+
+@media screen and (min-width: 576px) and (max-width:997px) {
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  header{
+
+    padding: 50px;
+  }
+  nav{
+    margin: 10px 0;
+  }
+  .header-container{
+    display: flex;
+    justify-content: space-between;
+  }
+  .banner-description{
+    width: 100%;
+  }
+
+}
