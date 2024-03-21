@@ -43,6 +43,11 @@ ul li {
 nav > ul > li > a {
   text-decoration: none;
 }
+/* Main Section is start here */
+main {
+  max-width: 1440px;
+  margin: 70px auto;
+}
 
 /* Banner Section is Start Here */
 .banner-content {
@@ -118,7 +123,7 @@ nav > ul > li > a {
 
 .someFacts-description {
   width: 542px;
-  color:  #727272;
+  color: #727272;
   font-size: 16px;
   font-weight: 400;
   margin-top: 15px;
@@ -148,6 +153,30 @@ nav > ul > li > a {
   line-height: normal;
   margin-top: 5px;
 }
+/* Sponspors section is start here */
+.sponspors {
+  margin-top: 40px;
+  text-align: center;
+}
+.section-title {
+  color: #131313;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.sponspors-description {
+  text-align: center;
+  padding: 30px;
+}
+.sponspors-img-container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.sponspors-img-container img {
+  width: 153.333px;
+  height: 50px;
+}
 
 /* ################################ */
 /* ################################ */
@@ -169,8 +198,13 @@ nav > ul > li > a {
   nav {
     margin: 10px 0;
   }
+  .someFacts {
+    justify-content: center;
+  }
   .header-container,
-  .teams-conatiner {
+  .teams-conatiner,
+  .facts-cart-contaienr,
+  .sponspors-img-container {
     flex-direction: column;
   }
   .banner-description {
@@ -178,6 +212,25 @@ nav > ul > li > a {
   }
   .teams-img-conatiner {
     grid-template-columns: 1fr;
+  }
+
+  .facts-cart-contaienr,
+  .someFacts {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .someFacts-description {
+    padding-left: 30px;
+    width: 80%;
+  }
+  .facts-cart-contaienr {
+    gap: 20px;
+  }
+  .sponspors-img-container {
+    align-items: center;
+  }
+  .sponspors-img-container img{
+    margin: 10px;
   }
 }
 
@@ -207,10 +260,19 @@ nav > ul > li > a {
   .teams-img-conatiner {
     padding-bottom: 20px;
   }
-}
 
-/* Main Section is start here */
-main {
-  max-width: 1440px;
-  margin: 70px auto;
+  .someFacts,
+  .someFacts-description {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .facts-cart-contaienr, .sponspors-img-container {
+    display: grid;
+    margin: 30px;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .sponspors-img-container{
+    align-items: center;
+  }
 }
